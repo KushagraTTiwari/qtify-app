@@ -8,10 +8,12 @@
     align-items: center;
 }
 
-.navbar>img{
+.logo{
     margin-left: 14px;
 }
-
+.logo>img{
+    margin: 10px;
+}
 .searchbar{
     display: flex;
 }
@@ -45,4 +47,6 @@
     font-size: larger;
     font-weight: 700;
     background-color: black;
+    font-family: poppins;
+    cursor: pointer;
 }

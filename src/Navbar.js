@@ -9,7 +9,9 @@ const Navbar = () => {
   const data = "Give Feedback"
   return (
     <div className="navbar">
-      <img src={logo} alt="logo" />
+      <div className="logo">
+        <img src={logo} alt="logo" />
+      </div>
       <div className="searchbar">
         <input type="text" placeholder="Search a album of your choice" />
         <button>
