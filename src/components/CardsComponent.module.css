@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cards{
+    /* border: 2px solid white; */
+    height: 15rem;
+    width: 12rem;
+    margin: 20px 0px 90px 40px;
+}
+.cardsimg{
+    height: 100%;
+    width: 100%;
+}
+.cardsimg>img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cardstext{
+    background-color: white;
+    /* height: 2rem; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.cardstext>h5{
+    background-color: black;
+    /* height: 2rem;
+    width: 8rem; */
+    border-radius: 20px;
+    color: white;
+    padding: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
