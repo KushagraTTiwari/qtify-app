@@ -30,7 +30,7 @@ const Section = () =>{
         <div>
             <div style={{display:"flex", justifyContent:"space-between"}}> 
                 <h1 style={{color: "white", marginLeft:"40px"}}>Top Album</h1>
-                <button onClick={toggleCollapse} style={{width:"7rem", fontSize:"larger", fontWeight:"800", color:"green", background:"transparent" , borderStyle:"none", marginRight:"25px"}}>{collapsed ? 'Expand' : 'Collapse'}</button>
+                <button onClick={toggleCollapse} style={{width:"7rem", fontSize:"larger", fontWeight:"700", color:"green", background:"transparent" , borderStyle:"none", marginRight:"25px"}}>{collapsed ? 'Show All' : 'Collapse All'}</button>
             </div>
             <div style={{display:"flex", flexWrap:"wrap"}}>
                 {albums.map((album, index)=> {
