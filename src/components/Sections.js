@@ -1,6 +1,7 @@
 import React,{ useState, useEffect} from 'react';
 import axios from 'axios'
 import CardsComponent from './CardsComponent';
+import SwiperUi from './Swiper';
 // import Card from "@mui/material/Card"
 
 
@@ -26,6 +27,8 @@ const Section = () =>{
         setCollapsed(!collapsed);
     };
 
+
+
     return (
         <div>
             <div style={{display:"flex", justifyContent:"space-between"}}> 
@@ -33,10 +36,7 @@ const Section = () =>{
                 <button onClick={toggleCollapse} style={{width:"7rem", fontSize:"larger", fontWeight:"700", color:"green", background:"transparent" , borderStyle:"none", marginRight:"25px"}}>{collapsed ? 'Show All' : 'Collapse All'}</button>
             </div>
             <div style={{display:"flex", flexWrap:"wrap"}}>
-                {albums.map((album, index)=> {
-                    console.log("Album data:", album.slug);
-                    return <CardsComponent name={album.slug} image={album.image} follows={album.follows} key={index}/>
-                })}
+                    return <SwiperUi  data={albums}/>
             </div>
         </div>
     )
