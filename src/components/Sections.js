@@ -1,6 +1,6 @@
 import React,{ useState, useEffect} from 'react';
 import axios from 'axios'
-import CardsComponent from './CardsComponent';
+// import CardsComponent from './CardsComponent';
 import SwiperUi from './Swiper';
 // import Card from "@mui/material/Card"
 
@@ -13,7 +13,7 @@ const Section = () =>{
         try {
             const response = await axios.get('https://qtify-backend-labs.crio.do/albums/top')
             setAlbums(response.data)
-            console.log("data -> ", response.data)
+            // console.log("data -> ", response.data)
         } catch (error) {
             console.log("Error in frtching data: ",error)
         }

@@ -3,7 +3,7 @@ import * as React from 'react';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import styles from "../components/CardsComponent.module.css"
-import Section from "../components/Sections.js"
+// import Section from "../components/Sections.js"
 
 const capitalizeFirstLetter = (name) => {
     return name
@@ -14,11 +14,11 @@ const capitalizeFirstLetter = (name) => {
 
 const CardsComponent = ({name, image, follows}) => {
     const formattedName = capitalizeFirstLetter(name);
-    console.log(name)
+    // console.log(name)
     return (
         <div>
             <div className={styles.cards}>
-                <div className={styles.cardsimg}><img src={image} alt="image not found"/></div>
+                <div className={styles.cardsimg}><img src={image} alt="not found"/></div>
                 {/* <div className={styles.cardstext}><h5>10110001 follows</h5></div> */}
                 <div className={styles.cardstext}>
                 <Stack direction="row" spacing={1}>
